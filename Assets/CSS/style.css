@@ -106,11 +106,6 @@ header nav ul li a :hover{
     padding: 30px 0;
     display: flex;
     justify-content: space-between;
-    background-color: var();
-}
-
-.my-work h2 {
-    color: var();
 }
 
 .grid-border {
@@ -218,3 +213,67 @@ footer ul li a:hover {
     border-radius: 15px;
 }
 
+@media screen and (max-width: 575px) {
+    header {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    header nav ul {
+        min-height: 80px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .title {
+        border-bottom: 5px solid;
+    }
+
+    .my-work {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .grid-border {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .projects-table {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    .content-contain {
+        width: 100%;
+    }
+
+    footer ul li {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title h2 {
+        font-size: 35px;
+    }
+
+    .about-me p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
